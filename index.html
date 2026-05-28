@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1> registro de estduiantes</h1>
+
+        <label> nombre :</label>
+        <input type="text" id = "nombre">
+
+        <label> numero de cuenta :</label>
+        <input type="text" id = "cuenta">
+
+        <label> carrera :</label>
+        <input type="text" id = "carrera">
+
+        <button id="btnRegistrar"> Registrar</button>
+    </div>
+
+    <div class="contenedor">
+        <h2> Estudiantes Registrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Número de Cuenta</th>
+                    <th>Carrera</th>
+                </tr>
+            </thead>
+            <tbody id="tablaEstudiantes">
+            </tbody>
+        </table>
+    </div>
+   
+    <script src="renderer.js"></script>
+</body>
+</html>
